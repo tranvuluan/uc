@@ -1,6 +1,6 @@
 from pynput import mouse
 from pynput.mouse import Controller
-from .socket_client import init_socket, send_cursor_position
+from boundary_detect.client.socket_client import init_socket, send_cursor_position
 
 delta_x = 0
 
