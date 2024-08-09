@@ -1,5 +1,4 @@
 from pynput import mouse
-from pynput.mouse import Controller
 
 def on_move(x, y):
     print(f'Mouse moved to ({x}, {y})')
@@ -20,8 +19,8 @@ def listener_mouse():
 
 
 def control_mouse(pos_x, pos_y):
-    mouse = Controller()
-    mouse.position = (pos_x, pos_y)
+    mouse_controller = mouse.Controller()
+    mouse_controller.position = (pos_x, pos_y)
     # Print the current position
     print(f'Mouse moved to {mouse.position}')
 
