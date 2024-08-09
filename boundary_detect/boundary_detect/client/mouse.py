@@ -34,10 +34,11 @@ def test_flow(pos_x, pos_y):
     global delta_x
     if pos_x > 1919:
         if delta_x < 1000:
-            delta_x += 10
+            delta_x += 3
         else:
             delta_x = 0
-        print('Reach right screen: ', pos_x, pos_y)
+        # print('Reach right screen: ', pos_x, pos_y)
+        print(delta_x)
         send_cursor_position(delta_x, 100)
     else:
         delta_x = 0
