@@ -1,6 +1,6 @@
 import socket
 import pyautogui
-
+from .mouse import control_mouse
 
 def receive_cursor_position():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -16,7 +16,7 @@ def receive_cursor_position():
         # # Decode the received data
         x, y = map(int, data.decode("utf-8").split(","))
         print('data: ', x, y)
-
+        control_mouse(x, y)
         # # Move cursor to the new position
         # pyautogui.moveTo(x, y)
 

@@ -10,7 +10,8 @@ setup(
     install_requires=[
         "pyautogui",
         "pygetwindow",
-        "screeninfo"
+        "screeninfo",
+        "pynput"
     ],
     entry_points={
         'console_scripts': [
