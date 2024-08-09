@@ -46,3 +46,4 @@ def main():
     init_socket()
     listener_mouse()
 
+main()

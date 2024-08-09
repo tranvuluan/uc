@@ -4,7 +4,7 @@ client_socket = None
 def init_socket():
     global client_socket
     # target_ip = "0.0.0.0"
-    target_ip = "192.168.64.1"
+    target_ip = "192.168.1.8"
     target_port = 9999
     try:
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

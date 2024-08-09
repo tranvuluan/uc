@@ -1,6 +1,6 @@
 import socket
 import pyautogui
-from mouse import control_mouse
+from boundary_detect.server.mouse import control_mouse
 
 def receive_cursor_position():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
